@@ -8,7 +8,7 @@ tags: Notifications iOS NotificationCenter
 
 This is a (probably not complete) list of Notification.Name that can be used with the NotificationCenter
 
-```
+```swift
 let event: Notification.Name = Foundation.NSLocale.currentLocaleDidChangeNotification
 NotificationCenter.default.addObserver(forName: event, object: nil, queue: nil) { note in
    print(note)
