@@ -6,19 +6,6 @@ category: Test
 tags: Notifications iOS NotificationCenter
 ---
 
-{{ page.date | date: "%-d %B %Y" }}
-
-
-<div class="tags-expo">
-<div class="tags-expo-list">
-<b>Tags:</b>     {% for tag in site.tags %}
-<a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
-    {% endfor %}
-</div>
-<hr/>
-</div>
-
-
 ## Foundation
 
 ### NSLocale
