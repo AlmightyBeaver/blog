@@ -1,5 +1,19 @@
+//pre.highlight {
+//  background-color: #242424; //#efefef;
+//  padding: 7px 7px 7px 10px;
+//  border: 1px solid #ddd;
+  //-moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
+  //-webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
+  //box-shadow: 3px 3px rgba(0,0,0,0.1);
+//  margin: 20px 0 20px 0;
+//  overflow: scroll;
+//}
 
-.highlight { background: #191919; padding: 10px; overflow: auto; line-height: 1.2; border-radius: 0.2em }
+//code {
+//  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+//}
+
+.highlight { background: #191919; padding: 8px; overflow: auto; line-height: 1.2; border-radius: 0.2em }
 .highlight pre { margin: 0}
 .highlight code { color: #F8F8F8; font-family: "Source Code Pro", Menlo, monospace; font-size: 70% }
 .highlight .hll { background-color: #ffffcc }
