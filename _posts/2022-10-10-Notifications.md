@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apple Notifications
+title: Apple Notifications.Name
 published: true
 category: Test
 tags: Notifications iOS NotificationCenter
@@ -17,10 +17,6 @@ tags: Notifications iOS NotificationCenter
 </div>
 <hr/>
 </div>
-
-  
-
-# Apple Notifications.Name
 
 
 ## Foundation
