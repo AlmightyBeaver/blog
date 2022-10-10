@@ -9,15 +9,6 @@ layout: default
     {{ page.date | date: "%B %e, %Y" }}
  </div>
   
-  <div class="tags-expo">
-<div class="tags-expo-list">
-    {% for tag in page.tags %}
-<a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
-    {% endfor %}
-</div>
-<hr/>
-</div>
-  
   <div class="entry">
     {{ content }}
   </div>
