@@ -9,7 +9,7 @@ title: Tags
     <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
     {% endfor %}
   </div>
-  <hr/>
+  <hr style="border:solid #606060 1px; height:1px;">
   <div>
     {% for tag in site.tags %}
     <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
