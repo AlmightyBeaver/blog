@@ -5,9 +5,9 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
-      <small class="post-date-index">{{ post.date | date_to_string }}</small>
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
+      <small class="post-date-index">{{ post.date | date_to_string }}</small>
       <div class="entry">
         {{ post.excerpt }}
       </div>
