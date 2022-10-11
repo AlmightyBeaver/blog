@@ -16,8 +16,16 @@
 .highlight { background: #272727; padding: 8px; overflow: auto; line-height: 1.2; border-radius: 0.2em }
 .highlight pre { margin: 0}
 .highlight code { color: #F8F8F8; font-family: "Source Code Pro", Menlo, monospace; font-size: 70%;
+}
+.highlight tt { 
+	padding: 1px 0
+	font-family: $fontMonospace
+	font-size: 12px
+	line-height: 20px
+	background: $codebackground
   border-radius: 0.2em;
-  background-color: #272727;}
+  //background-color: #272727;
+}
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #5F5A60; font-style: italic } /* Comment */
 .highlight .err { border:#B22518; } /* Error */
