@@ -29,6 +29,23 @@ body {
   padding: 0 10px;
   width: 100%;
 }
+h1-index {
+  font-family: $helveticaNeue;
+  color: $lightGray; //$darkerGray;
+  font-weight: bold;
+
+  line-height: 1.7;
+  margin: 1em 0 0px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+  font-size: 30px;
+  a {
+    color: inherit;
+  }
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
@@ -309,8 +326,8 @@ footer {
 
 .post-date-index {
   //display: block;
-  margin-top: -2.5em; // -.5rem;  
-  margin-bottom: -2.5em; // -.5rem;
+  //margin-top: -2.5em; // -.5rem;  
+  //margin-bottom: -2.5em; // -.5rem;
   color: #9a9a9a;
   font-size: 80%;
 }
