@@ -10,12 +10,12 @@ layout: default
  </div>
   
  <!--<b>Tags</b> -->
- {% if page.tags %} |
+ {% if page.tags %}
  {% for tag in page.tags %}
   <a href="{{ site.url }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
  {% endfor %}
  {% endif %}
-  <hr>
+ <!--<hr> -->
   
   <div class="entry">
     {{ content }}
