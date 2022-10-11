@@ -9,7 +9,8 @@ layout: default
     {{ page.date | date_to_string }} <!--date: "%B %e, %Y" }}-->
  </div>
   
- <b>Tags:</b> {% if page.tags %} |
+ <!--<b>Tags</b> -->
+ {% if page.tags %} |
  {% for tag in page.tags %}
   <a href="{{ site.url }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
  {% endfor %}
