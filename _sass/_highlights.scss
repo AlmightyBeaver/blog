@@ -17,13 +17,7 @@
 .highlight pre { margin: 0}
 .highlight code { color: #F8F8F8; font-family: "Source Code Pro", Menlo, monospace; font-size: 70%;
 }
-.highlight tt { 
-	padding: 1px 0;
-	font-size: 12px;
-	line-height: 20px;
-	background: #272727;
-  border-radius: 0.2em;
-  //background-color: #272727;
+.highlight tt { background: #272727; padding: 1px 0; border-radius: 0.2em; font-family: "Source Code Pro", Menlo, monospace; font-size: 70%;
 }
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #5F5A60; font-style: italic } /* Comment */
