@@ -17,19 +17,19 @@ code,
 pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
 }
-code {
+code { // inline code
   padding: .25em .5em;
   font-size: 85%;
   color: #F8F8F8;
   background-color: #292929;
   border-radius: 3px;
 }
-pre {
+pre { // code blocks
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
   padding: 1rem;
-  font-size: .8rem;
+  font-size: 70%;
   line-height: 1.4;
   white-space: pre;
   white-space: pre-wrap;
