@@ -52,7 +52,7 @@ When the persistent container (`NSPersistentContainer` or `NSPersistentCloudKitC
 
 I use e.g. 
  
-```
+```swift
 let container: NSPersistentContainer = NSPersistentContainer(name: "yourDataModelName",
                                                              managedObjectModel: yourDataModel)
                                                             
