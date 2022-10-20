@@ -3,7 +3,7 @@ layout: post
 title: App Group Storage
 published: true
 category: Swift
-tags: Swift UserDefaults NSUbiquitousKeyValueStore CoreData AppGroup Storage
+tags: UserDefaults NSUbiquitousKeyValueStore CoreData AppGroup Storage
 ---
 
 
