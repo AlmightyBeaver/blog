@@ -3,7 +3,7 @@ layout: post
 title: Apple Notifications.Name
 published: true
 category: Test
-tags: Notifications iOS NotificationCenter
+tags: Notifications NotificationCenter
 ---
 
 This is a (probably not complete) list of Notification.Name that can be used with the NotificationCenter
