@@ -47,6 +47,7 @@ You can read your CFBundleIdentifier programmatically with
 let bundleID = Bundle.main.bundleIdentifier
 print(bundleId)
 ```
+Then use the value in all other targets. (See chapter "Configuring Common Key-Value Storage for Multiple Apps" in [https://developer.apple.com/library/archive/documentation/General/Conceptual/iCloudDesignGuide/Chapters/iCloudFundametals.html#//apple_ref/doc/uid/TP40012094-CH6-SW1](https://developer.apple.com/library/archive/documentation/General/Conceptual/iCloudDesignGuide/Chapters/iCloudFundametals.html#//apple_ref/doc/uid/TP40012094-CH6-SW1)) 
 
 
 Be aware of the the `.synchronize()` method. I'm not sure if it's necessary to call the `.synchronize()` method of your NSUbiquitousKeyValueStore instance after each change to avoid data corruption.
