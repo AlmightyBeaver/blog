@@ -7,6 +7,7 @@ tags: Swift UserDefaults NSUbiquitousKeyValueStore CoreData AppGroup Storage
 ---
 
 
+
 Usage of the same data storage in an app group.
 
 All Targets of the app group (e.g. app extensions like Widget, Intents (Siri), ...) shall access the same data storages.
@@ -37,7 +38,16 @@ For migration from a non app group UserDefaults to an app group UserDefaults see
 To use NSUbiquitousKeyValueStore in an app group you must have the same `iCloud Key_Value Store` (`com.apple.developer.ubiquity-kvstore-identifier`) value in the `*.entitlements` file in each target.
 
 In my app entitlement file the standard value was
-`$(TeamIdentifierPrefix)$(CFBundleIdentifier)`. This won't work in another target. The `$(CFBundleIdentifier)` is the bundle id and it's different in each target. A shared store could use e.g. `$(TeamIdentifierPrefix)com.yourCompany.app`. Each target must use this value.
+`$(TeamIdentifierPrefix)$(CFBundleIdentifier)`. This won't work in another target because each target has its own bundle identifier. 
+
+A shared store could use e.g. `$(TeamIdentifierPrefix)com.yourCompany.app`. Each target has use this value.
+
+You can read your CFBundleIdentifier programmatically with 
+```swift
+let bundleID = Bundle.main.bundleIdentifier
+print(bundleId)
+```
+
 
 Be aware of the the `.synchronize()` method. I'm not sure if it's necessary to call the `.synchronize()` method of your NSUbiquitousKeyValueStore instance after each change to avoid data corruption.
 
@@ -52,7 +62,7 @@ When the persistent container (`NSPersistentContainer` or `NSPersistentCloudKitC
 
 I use e.g. 
  
-```swift
+```swift 
 let container: NSPersistentContainer = NSPersistentContainer(name: "yourDataModelName",
                                                              managedObjectModel: yourDataModel)
                                                             
@@ -85,6 +95,11 @@ defaultDescription.url = appGroupStoreFileURL
 For migration from a non app group store to an app group store see [https://menuplan.app/coding/2021/10/27/core-data-store-path-migration.html](https://menuplan.app/coding/2021/10/27/core-data-store-path-migration.html).
 
 
+## Keychain
+
+I didn't use it but maybe here is an indication if you have to use it across targets/apps
+
+[https://developer.apple.com/library/archive/technotes/tn2311/_index.html](https://developer.apple.com/library/archive/technotes/tn2311/_index.html)
 
 
 ## Ressources
@@ -92,4 +107,5 @@ For migration from a non app group store to an app group store see [https://menu
 - [https://stackoverflow.com/a/61967892/11536071](https://stackoverflow.com/a/61967892/11536071)
 - [https://menuplan.app/coding/2021/10/27/core-data-store-path-migration.html](https://menuplan.app/coding/2021/10/27/core-data-store-path-migration.html)
 - [https://gist.github.com/dougdiego/945fd2e33769cf5f1338](https://gist.github.com/dougdiego/945fd2e33769cf5f1338)
+- [https://developer.apple.com/library/archive/technotes/tn2311/_index.html](https://developer.apple.com/library/archive/technotes/tn2311/_index.html)
 
