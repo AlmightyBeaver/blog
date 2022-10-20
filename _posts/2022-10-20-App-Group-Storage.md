@@ -7,9 +7,6 @@ tags: Swift UserDefaults NSUbiquitousKeyValueStore CoreData AppGroup Storage
 ---
 
 
-
-# App Group Storage
-
 Usage of the same data storage in an app group.
 
 All Targets of the app group (e.g. app extensions like Widget, Intents (Siri), ...) shall access the same data storages.
